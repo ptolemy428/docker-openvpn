@@ -5,6 +5,7 @@ MAINTAINER Larry Liang <ptolemy428@gmail.com>
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install wget vim openvpn openssh-client curl
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install supervisor
 
 #download jq
 RUN wget -O /usr/local/bin/jq http://stedolan.github.io/jq/download/linux64/jq
