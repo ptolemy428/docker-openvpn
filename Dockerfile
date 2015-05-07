@@ -12,4 +12,4 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install wget vim openvpn openssh-c
 RUN wget -O /usr/local/bin/jq http://stedolan.github.io/jq/download/linux64/jq
 RUN chmod 700 /usr/local/bin/jq
 
-RUN cat '/etc/init.d/openvpn start' >> /root/.bashrc
+RUN echo '/etc/init.d/openvpn start' >> /root/.bashrc
